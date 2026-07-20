@@ -23,7 +23,7 @@ libcap:
 libcurl:
 - '8'
 libprotobuf:
-- 6.33.5
+- 7.35.1
 libsqlite:
 - '3'
 libuuid:
