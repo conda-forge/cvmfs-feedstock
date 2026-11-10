@@ -1,5 +1,5 @@
 context:
-  version: "2.14.0"
+  version: "2.14.2"
 
 package:
   name: libcvmfs
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/cvmfs/cvmfs/archive/refs/tags/cvmfs-${{ version }}.tar.gz
-  sha256: c3ccc07d0873043e5035557704acbd50f8c4d223867564087f9001f92e65421d
+  sha256: 5a88def2a6478d537dae1e268dd10821c60ad975ba271925ef487a27a4407093
   patches:
     # Search for libcap in every configuration that builds libcvmfs-util
     # https://github.com/cvmfs/cvmfs/pull/4338
@@ -26,7 +26,7 @@ source:
     - patches/4342.patch
 
 build:
-  number: 1
+  number: 0
   skip:
     - win
   dynamic_linking:
